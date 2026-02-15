@@ -1469,8 +1469,8 @@ export class SandstonePack {
     await this.core.save(cliOptions, {
       visitors: [
         // Initialization visitors
-        new InitObjectivesVisitor(this),
         new InitConstantsVisitor(this),
+        new InitObjectivesVisitor(this),
         new GenerateLazyMCFunction(this),
 
         // Transformation visitors

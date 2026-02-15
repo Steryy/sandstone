@@ -137,7 +137,6 @@ export class Score extends MacroArgument implements ConditionClass, ComponentCla
     let objective = args[1] ?? this.objective
     if (typeof args[0] === 'number') {
       this.sandstonePack.registerNewConstant(args[0])
-      objective = 'sandstone_const'
     }
 
     this.commands.scoreboard.players.operation(this, operator, args[0], objective)
